@@ -1,0 +1,86 @@
+
+<title>时间线</title>
+
+<style>
+/* 这段样式只是用于演示 */
+#LAY-component-timeline .layui-card-body{padding: 15px;}
+</style>
+
+<div class="layui-fluid" id="LAY-component-timeline">
+  <div class="layui-row layui-col-space15">
+    <div class="layui-col-md12">
+      <div class="layui-card">
+        <div class="layui-card-header">版本迭代</div>
+        <div class="layui-card-body">
+
+          <ul class="layui-timeline">
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis"></i>
+              <div class="layui-timeline-content layui-text">
+                <p>更多期待</p>
+            </li>
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis"></i>
+              <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">3月2日</h3>
+                <p></p>
+                <ul>
+                  <li>主页内容更换</li>
+                  <li>新增 <b>音乐</b> 一栏</li>
+                  <li>新增 <b>更多</b> 一栏，内含三子栏</li>
+                </ul>
+              </div>
+            </li>
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis"></i>
+              <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">2019年11月11日</h3>
+                <p>由layui模版改写，迭代样式布局</p>
+              </div>
+            </li>
+          </ul> 
+        </div>
+      </div>
+      <div class="layui-card">
+        <div class="layui-card-header">版本丢失</div>
+        <div class="layui-card-body">
+          <ul class="layui-timeline">
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis"></i>
+              <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">2015年 ～ 2019年</h3>
+                <p>2015年X月X日 ～ 2019年11月11日，不想写就当丢失。。。</p>
+              </div>
+            </li>
+          </ul> 
+        
+        </div>
+      </div>
+      <div class="layui-card">
+        <div class="layui-card-header">版本新建</div>
+        <div class="layui-card-body">
+          <ul class="layui-timeline">
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis"></i>
+              <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">2015年X月X日</h3>
+                <p>闲时撸个网页，早期导航雏形破壳了</br>什么时间写完也忘了，淘宝买个域名、空间挂上，能用</p>
+              </div>
+            </li>
+          </ul> 
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+layui.use(['admin'], function(){
+  var $ = layui.$
+  ,admin = layui.admin
+  ,element = layui.element
+  ,router = layui.router();
+
+});
+</script>

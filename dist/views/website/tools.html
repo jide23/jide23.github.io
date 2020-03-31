@@ -1,0 +1,82 @@
+<title>工具</title>
+
+<script type="text/html" template>
+  <link rel="stylesheet" href="{{ layui.setter.base }}style/template.css?v={{ layui.admin.v }}-1" media="all">
+</script>
+<style>
+  .cmdlist-text {
+    margin-top: -12px;
+  }
+
+  .price {
+    margin: 15px 0px 0px -20px;
+  }
+
+  .price .layui-icon {
+    margin: 0px 5px 0px 20px;
+  }
+
+  strong {
+    text-transform: uppercase;
+  }
+</style>
+
+<div class="layui-card layadmin-header">
+  <div class="layui-breadcrumb" lay-filter="breadcrumb">
+    <a lay-href="">主页</a>
+    <a><cite>设计</cite></a>
+    <a><cite>设计工具</cite></a>
+  </div>
+</div>
+
+<div class="layui-fluid layadmin-maillist-fluid">
+  <div class="layui-row layui-col-space15">
+
+
+    <div class="layui-col-md4 layui-col-sm6">
+      <div class="layadmin-contact-box">
+        <div class="layui-col-md4 layui-col-sm6">
+          <a href="https://zxpinstaller.com/" target="_blank">
+            <div class="layadmin-text-center">
+              <img src="http://image.thum.io/get/https://zxpinstaller.com/">
+            </div>
+          </a>
+        </div>
+
+        <div class="layui-col-md8 layadmin-padding-left20 layui-col-sm6">
+          <a href="https://zxpinstaller.com/" target="_blank">
+            <div class="cmdlist-text">
+              <h3 class="layadmin-title">
+                <strong>ZXPInstaller</strong>
+              </h3>
+              <p class="info">zxpinstaller is a user-friendly installer for adobe extensions. it replaces the
+                extension manager which adobe no longer supports as of cc 2015.</p>
+              <div class="price">
+                <i class="layui-icon layui-icon-website"></i>
+                433
+                <i class="layui-icon layui-icon-release"></i>
+                443
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+
+
+   
+  </div>
+
+</div>
+
+</div>
+</div>
+
+<script>
+  layui.use(['admin'], function () {
+    var $ = layui.$,
+      admin = layui.admin;
+
+  });
+</script>

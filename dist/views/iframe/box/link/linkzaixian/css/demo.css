@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.wrapper {
+    margin: 0 auto;
+    overflow: auto;
+    z-index: 5;
+}
+
+.wrapper .search {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    padding-top: 15px;
+    position: fixed;
+}
+
+.wrapper .search .inp {
+    width: 40%;
+    height: 30px;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 40px;
+    padding: 0 10px;
+    margin-left: 5px;
+    float: left;
+}
+
+.wrapper .search .btn-list {
+    float: left;
+    width: 50px;
+    height: 32px;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom: 3px solid #e5e5e5;
+    padding: 0px 6px;
+    margin-left: 10px;
+    font-size: 1em;
+    /*很关键：将默认的select选择框样式清除*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {
+    display: none;
+}
+
+.wrapper .user {
+    padding-top: 60px;
+}
+
+.wrapper .user li {
+    float: left;
+    display: inline-block;
+    width: 29.5vw;
+    min-width: 270px;
+    height: 60px;
+    background: #f8f8f8;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+    text-decoration: none;
+}
+
+.wrapper .user li:hover {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(120, 0, 0, 0.2);
+}
+
+.wrapper .user li:hover .tit .motto {}
+
+.wrapper .user li .head-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 5%;
+    overflow: hidden;
+    float: left;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .user li .head-img img {
+    width: 120%;
+}
+
+.wrapper .user li .tit {
+    float: left;
+    height: 100%;
+    width: 60%;
+    min-width: 180px;
+    margin-left: 20px;
+
+}
+
+.wrapper .user li .tit .name {
+    height: 24px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.wrapper .user li .tit .motto {
+    height: 18px;
+    font-size: .8em;
+    color: #999;
+    margin-top: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.wrapper .prompt {
+    color: #d4d4d4;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #f8f8f8;
+    border-radius: 3px;
+    display: none;
+}
+
+#btn_up {
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    box-shadow:0 2px 5px rgba(120,0,0,0.3);
+}
+.icon_right {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 4px;
+}

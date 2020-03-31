@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="jide" name="author">
+    <title>
+        Box
+    </title>
+    <meta content="设计师网站导航, 设计导航, 专注分享优秀设计网站、免费无版权限制可商用的高品质素材，设计教程、尺寸规范、配色方案、设计素材和灵感, 创意导航,创意网站导航, 创造师导航, 前端导航, 程序员导航, 程序导航, 产品导航, 产品经理导航, 运营导航, 极客导航, 创意工作者导航" name="keywords">
+    <meta content="一个创意工作者的导航，设计导航, 设计师网址导航, 设计网站, 设计网站大全, 免费素材, 图片素材, psd素材、专注分享正版优质设计、前端、产品、运营的书签导航，设计教程、设计规范、颜色搭配、灵感创意、前端框架、开发者工具、互联网新品推荐、运营数据分析、自媒体和工具利器好用的分类导航大全" name="description">
+    <link href="./img/favicon.ico" rel="shortcut icon">
+    <!--=================================================-->
+    <!--Roboto Slab Font-->
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,700italic,300,700,500italic,400" rel="stylesheet">
+    <!--=================================================-->
+    <!--index_style css-->
+    <link href="./css/index_style.css" rel="stylesheet">
+    <!--=================================================-->
+    <!--index_style js-->
+    <link href="./js/index_style.js" rel="stylesheet">
+    <!--=================================================-->
+    <!--malihu-custom-scrollbar-plugin-->
+    <link href="./plug/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <script src="./plug/malihu-custom-scrollbar-plugin/jquery/1.11.1/jquery.min.js">
+    </script>
+    <script src="./plug/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js">
+    </script>
+    <!--=================================================-->
+    <!--screenfull js-->
+    <script src="https://cdn.bootcss.com/screenfull.js/4.2.0/screenfull.js"></script>
+    <!--=================================================-->
+    <!--img-hover-->
+    <script>
+    (function($) {
+        $(window).on("load", function() {
+            $("#sidebar").mCustomScrollbar({ autoHideScrollbar: true });
+        });
+    })(jQuery);
+
+    function MM_swapImgRestore() { //v3.0
+        var i, x, a = document.MM_sr;
+        for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+    }
+
+    function MM_preloadImages() { //v3.0
+        var d = document;
+        if (d.images) {
+            if (!d.MM_p) d.MM_p = new Array();
+            var i, j = d.MM_p.length,
+                a = MM_preloadImages.arguments;
+            for (i = 0; i < a.length; i++)
+                if (a[i].indexOf("#") != 0) {
+                    d.MM_p[j] = new Image;
+                    d.MM_p[j++].src = a[i];
+                }
+        }
+    }
+
+    function MM_findObj(n, d) { //v4.01
+        var p, i, x;
+        if (!d) d = document;
+        if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+            d = parent.frames[n.substring(p + 1)].document;
+            n = n.substring(0, p);
+        }
+        if (!(x = d[n]) && d.all) x = d.all[n];
+        for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+        for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+        if (!x && d.getElementById) x = d.getElementById(n);
+        return x;
+    }
+
+    function MM_swapImage() { //v3.0
+        var i, j = 0,
+            x, a = MM_swapImage.arguments;
+        document.MM_sr = new Array;
+        for (i = 0; i < (a.length - 2); i += 3)
+            if ((x = MM_findObj(a[i])) != null) {
+                document.MM_sr[j++] = x;
+                if (!x.oSrc) x.oSrc = x.src;
+                x.src = a[i + 2];
+            }
+    }
+    </script>
+</head>
+
+<body onload="MM_preloadImages('./img/crop.png')" style="background-color: white;">
+    <div id="left_wrap">
+        <div id="logo">
+            <a href="http://jide23.net" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_box','','./img/box_t.png',1)">
+                <img alt="box" class="icon_logo" id="img_box" src="./img/box.png" />
+            </a>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li>
+                    <a href="link/linksearch/search.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_search','','./img/search_t.png',1)">
+                        <img alt="search" class="icon_wrap" id="img_search" src="./img/search.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="link/linklinggan/linggan.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_idea','','./img/idea_t.png',1)">
+                        <img alt="idea" class="icon_wrap" id="img_idea" src="./img/idea.png" />
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="https://uzer.me/index.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_cloudapp','','./img/cloudapp_t.png',1)">
+                        <img alt="cloudapp" class="icon_wrap" id="img_cloudapp" src="./img/cloudapp.png" />
+                    </a>
+                </li> -->
+                <li>
+                    <a href="link/linkdownload/download.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_download','','./img/download_t.png',1)">
+                        <img alt="download" class="icon_wrap" id="img_download" src="./img/download.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="link/linkzaixian/zaixian.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_zaixian','','./img/zaixian_t.png',1)">
+                        <img alt="zaixian" class="icon_wrap" id="img_zaixian" src="./img/zaixian.png" />
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="link/linkmusic/music.php" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_music','','./img/music_t.png',1)">
+                        <img alt="music" class="icon_wrap" id="img_music" src="./img/music.png" />
+                    </a>
+                </li> -->
+                <li>
+                    <a href="link/linkcolor/color.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_color','','./img/color_t.png',1)">
+                        <img alt="color" class="icon_wrap" id="img_color" src="./img/color.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="link/linkfont/font.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_font','','./img/font_t.png',1)">
+                        <img alt="font" class="icon_wrap" id="img_font" src="./img/font.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="link/linkpaint/paint.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_paint','','./img/paint_t.png',1)">
+                        <img alt="paint" class="icon_wrap" id="img_paint" src="./img/paint.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="link/link./img/img.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_img','','./img/img_t.png',1)">
+                        <img alt="img" class="icon_wrap" id="img_img" src="./img/img.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="link/linkvideo/video.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_video','','./img/video_t.png',1)">
+                        <img alt="video" class="icon_wrap" id="img_video" src="./img/video.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="link/linkguifan/guifan.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_guifan','','./img/guifan_t.png',1)">
+                        <img alt="guifan" class="icon_wrap" id="img_guifan" src="./img/guifan.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="link/linkplay/play.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_play','','./img/play_t.png',1)">
+                        <img alt="play" class="icon_wrap" id="img_play" src="./img/play.png" />
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="404.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_book','','./img/book_t.png',1)">
+                        <img alt="book" class="icon_wrap" id="img_book" src="./img/book.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="404.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_photography','','./img/photography_t.png',1)">
+                        <img alt="photography" class="icon_wrap" id="img_photography" src="./img/photography.png" />
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+        <div id="bot_wrap">
+            <a href="link/linkcp/cp.html" target="link" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_eye','','./img/eye_t.png',1)">
+                <img alt="eye" class="icon_wrap" id="img_eye" src="./img/eye.png" />
+            </a>
+        </div>
+    </div>
+    <div id="right_wrap">
+        <iframe name="link" frameborder="0" height="100%" src="link/linksearch/search.html" width="100%">
+        </iframe>
+    </div>
+    <div id="copyright">
+        <p>Copyright © 2016 -
+            <script type="text/javascript">
+            <!-- Begin
+            copyright = new Date(); //取得当前的日期
+            update = copyright.getFullYear(); //取得当前的年份
+            document.write(update); //update为自动更新的年份
+            //  End -->
+            </script>&nbsp;&nbsp;
+            JIDE23 All Rights Reserved.
+            <a href="http://www.miitbeian.gov.cn/" style="color: #999; text-decoration: none;">
+                鲁ICP备19011244号
+            </a>
+        </p>
+    </div>
+    <div class="btn_user btn_wrap"><a href='javascript:alert("变身失败，等待新版本更新再试！")' onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_user','','./img/user_t.png',1)">
+            <img alt="user" class="icon_right" id="img_user" src="./img/user.png" />
+        </a></div>
+    <div class="btn_screen btn_wrap"><a href="javascript:history.go(-1)" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_back','','./img/back_t.png',1)">
+            <img alt="back" class="icon_right" id="img_back" src="./img/back.png" />
+        </a></div>
+    <div class="btn_back btn_wrap"><a href="#" data-toggle="fullscreen" role="button" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('img_fullscreen','','./img/fullscreen_t.png',1)"><img alt="fullscreen" class="icon_right" id="img_fullscreen" src="./img/fullscreen.png" />
+        </a></div>
+    <script>
+    document.getElementById('img_fullscreen').addEventListener('click', () => {
+        if (screenfull.enabled) {
+            screenfull.request();
+        } else {
+            // Ignore or do something else
+        }
+    });
+    </script>
+</body>
+
+</html>

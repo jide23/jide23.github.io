@@ -1,0 +1,627 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-size: .97em;
+    font-weight: normal;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
+}
+/* title-menu css*/
+.title-menu {
+    float: left;
+    padding: 0px 6px 0 6px;
+    margin-left: 74px;
+}
+.title-menu a {
+    float: left;
+    color: #ccc;
+    text-align: center;
+    height: 20px;
+    display: block;
+    padding: 6px 6px 4px 6px;
+    *padding: 6px 6px 4px 6px;
+}
+.title-menu a:hover {
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+}
+.title-menu a.curType {
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+    background: #fc0107;
+}
+/* title-meau more css*/
+.title-menu a.more {
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 6px 6px 4px 6px;
+    *padding: 6px 6px 4px 6px;
+}
+.title-menu a.more:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.title-menu a.more:active {
+    color: #fff;
+    background: none;
+    text-decoration: none;
+}
+.title-menu a.curType:hover {
+    color: #fff;
+}
+/* header css*/
+.header {
+    width: 100vw;
+    height: 30px;
+    background: #222d32;
+    overflow: scroll;
+}
+.header .innerHeader {
+    min-width: 768px;
+}
+
+.header .innerHeader h3 {
+    height: 24px;
+    float: right;
+    display: inline;
+    padding: 0px 15px 0 12px;
+    overflow: scroll;
+}
+
+.header .innerHeader h3 a {
+    float: left;
+    color: #ccc;
+    text-align: center;
+    height: 24px;
+    display: inline;
+    padding: 6px 4px 4px 4px;
+    *padding: 6px 4px 4px 4px;
+}
+
+.header .innerHeader h3 a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .innerHeader .searchCon .searchText {
+    position: absolute;
+    left: 80px;
+    top: 30px;
+}
+.header .innerHeader .searchCon .searchText .searchBox {
+    float: left;
+    display: block;
+    width: 40vw;
+    height: 25px;
+    border: 1px #c0bbb4 solid;
+    line-height: 18px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: url(../images/bg_input_text.png) repeat-x;
+}
+
+.header .innerHeader .searchCon .searchText .searchBox:hover {
+    border: 1px #9c0 solid;
+    background: url(../images/bg_input_text_hover.png) repeat-x;
+}
+.header .innerHeader .searchCon .searchText .spBut {
+    float: left;
+    display: block;
+    color: #039;
+    cursor: pointer;
+    width: 72px;
+    height: 29px;
+    background: url(../images/btn_go.png) no-repeat left top;
+}
+
+.header .innerHeader .searchCon .searchText .spBut:hover {
+    width: 72px;
+    height: 29px;
+    background: url(../images/btn_go_hover.png) no-repeat left top;
+}
+.header .innerHeader .searchCon .searchText .searchWord {
+    float: left;
+    display: inline;
+    padding-left: 6px;
+    margin-left: 10px;
+    width: 380px;
+    height: 22px;
+    overflow: hidden;
+}
+
+.header .innerHeader .searchCon .searchText .searchWord a {
+    cursor: pointer;
+    white-space: nowrap;
+    float: left;
+    display: block;
+    height: 22px;
+    padding: 0 5px 0 5px;
+    line-height: 22px;
+}
+
+.header .innerHeader .searchCon .searchText .searchWord a:hover {
+    text-decoration: none;
+}
+
+.header .innerHeader .searchCon .searchText .searchWord a:active {
+    color: red;
+}
+.wrapper .moreCon {
+    width: 120px;
+    border: 1px #C9D7F1 solid;
+    border-color: #C9D7F1 #3366cc #36c #a2bae7;
+    z-index: 1001;
+    position: absolute;
+    display: none;
+    float: left;
+    background-color: #FFF;
+}
+.wrapper .moreCon .moreTit {
+    width: 112px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #999;
+    padding-left: 8px;
+}
+
+.wrapper .moreCon a {
+    display: block;
+    width: 108px;
+    height: 22px;
+    padding-left: 12px;
+    text-decoration: none;
+    line-height: 22px;
+    color: #069;
+}
+
+.wrapper .moreCon a:hover {
+    background: #36C none repeat scroll 0;
+    color: #FFF;
+}
+
+.wrapper .moreCon a.curLic {
+    display: block;
+    width: 108px;
+    height: 22px;
+    padding-left: 12px;
+    text-decoration: none;
+    line-height: 22px;
+    color: #000;
+    font-weight: bold;
+}
+
+.wrapper .moreCon a.curLic:hover {
+    text-decoration: underline;
+    background: none;
+}
+.wrapper .navPanel {
+    border-top: 0px solid #DAD7CF;
+    border-bottom: 0px solid #DAD7CF;
+    background: #f5f5f5 url('../images/bg_btn.png') top left;
+    padding: 0 20px 0 80px;
+}
+
+.wrapper .navPanel span {
+    float: left;
+    display: inline;
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+    background-color: #CCC;
+    margin-top: 2px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 25px;
+    margin-left: 2px;
+}
+
+.wrapper .navPanel .newSpan {
+    float: left;
+    display: inline;
+    height: 16px;
+    width: 16px;
+    margin-top: 4px;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.wrapper .navPanel span.adddPrefered {
+    float: left;
+    display: inline;
+    background: none;
+    width: 120px;
+}
+
+.wrapper .navPanel span.adddPrefered img {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.wrapper .navPanel span.adddPrefered h6 {
+    float: left;
+    display: inline;
+    text-align: left;
+    margin-left: 5px;
+    color: #645A44;
+}
+
+.wrapper .navPanel .innerNavPanel {
+    border-left: 1px #E4E1DA solid;
+    float: left;
+    height: auto;
+    width: 98%;
+    margin-top: 26px; 
+}
+
+.wrapper .innerNavPanel a {
+    height: 24px;
+    float: left;
+    line-height: 24px;
+    padding: 0 20px 0 20px;
+    display: block;
+    color: #999999;
+    text-decoration: none;
+    border-right: 1px solid #DAD7CF;
+    border-top: 1px solid #DAD7CF;
+    background: #F5f5f5;
+    white-space: nowrap;
+}
+
+.wrapper .innerNavPanel a span {
+    display: none;
+}
+
+.wrapper .innerNavPanel a:hover {
+    color: #395500;
+    background: #EFF9D0 top left repeat-x;
+    border-bottom: 1px solid #DAD7CF;
+}
+
+.wrapper .innerNavPanel a.curr {
+    color: #930;
+    background: #fff top left repeat-x;
+    border-bottom: 1px solid #fff;
+}
+
+.wrapper .innerNavPanel a.curr:hover {
+    color: #930;
+    background: #fff top left repeat-x;
+    border-bottom: 1px solid #fff;
+}
+
+.wrapper .innerNavPanel a.currPr {
+    padding: 0 20px 0 20px;
+    color: #930;
+    background: #FFF;
+    color: #930;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #DAD7CF;
+    white-space: nowrap;
+    position: relative;
+}
+
+.wrapper .innerNavPanel a.currPr:hover {
+    padding: 0 20px 0 20px;
+    color: #930;
+    background: #FFF;
+    color: #930;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    ;
+    border-right: 1px solid #DAD7CF;
+    white-space: nowrap;
+    position: relative;
+}
+
+.wrapper .innerNavPanel a.currPr span {
+    background: url(../images/tab_close.gif) no-repeat center right;
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    float: right;
+    top: 7px;
+    right: 4px;
+    z-index: 15;
+}
+
+.wrapper .innerNavPanel a.currPr span:hover {
+    background: url(../images/tab_close_hover.gif) no-repeat center right;
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+.wrapper .perConfigCon,
+.wrapper .options {
+    padding: 8px 80px;
+}
+
+.wrapper .perConfigCon h3,
+.wrapper .options h3 {
+    color: #690;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px 0 5px 0;
+    margin: 35px 0 10px 0;
+    border-bottom: 1px dashed #E0E0E0;
+}
+
+.wrapper .perConfigCon .tableConfig strong {
+    float: left;
+    display: inline;
+}
+
+.wrapper .perConfigCon .tableConfig b {
+    float: right;
+    display: inline;
+    margin-right: 8px;
+}
+
+.wrapper .perConfigCon .tableConfig span {
+    float: right;
+    display: inline;
+    cursor: pointer;
+}
+
+.wrapper .perConfigCon .tableConfig span .spanImg {
+    float: left;
+    display: inline;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.wrapper .perConfigCon .tableConfig span a {
+    padding-right: 8px;
+    text-decoration: underline;
+}
+
+.wrapper .preferList {
+    background: #EEF4FD none repeat scroll 0;
+    border: 1px solid #A7C7F5;
+    height: 290px;
+    max-height: 290px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper .preferList .preferItems {
+    background: #e0ebfc repeat scroll 0;
+    border-bottom: 1px dotted #ACCAF7;
+    color: #225095;
+    cursor: pointer;
+    height: 32px;
+    padding-left: 8px;
+    line-height: 31px;
+}
+
+.wrapper .preferList .act {
+    background: #fff8a7 repeat scroll 0;
+    border-bottom: 1px dotted #D5CEC1;
+    cursor: pointer;
+    color: #930;
+    height: 32px;
+    padding-left: 8px;
+    line-height: 31px;
+}
+
+.wrapper .preferList .act span {
+    float: left;
+}
+
+.wrapper .preferList .preferItems:hover {
+    background: #EFF9D0 repeat-x;
+    color: #395500;
+}
+
+.wrapper .preferList .preferItems span {
+    float: left;
+}
+
+.wrapper .preferList .delImg {
+    float: right;
+    margin-top: 7px;
+    margin-right: 8px;
+}
+
+.wrapper .preferListC {
+    background: #FCFCFA none repeat scroll 0;
+    border: 1px solid #CBC7B8;
+    height: 290px;
+    max-height: 290px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper .preferListC .searchMenuTit {
+    background: #E4E1DA none repeat scroll 0;
+    border-bottom: 1px solid #CCC6BB;
+    color: #716753 !important;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.wrapper .preferListC .searchMenuTit code {
+    padding: 0 3px;
+    font-weight: bolder;
+}
+
+.wrapper .preferListC .searchMenuList .ListItems {
+    background: white url(../images/bg_btn.png) repeat scroll 0;
+    border-bottom: 1px dotted #D5CEC1;
+    cursor: pointer;
+    padding: 5px 5px 5px 18px;
+}
+
+.wrapper .preferListC .searchMenuList .ListItems:hover {
+    background: #EFF9D0 repeat scroll 0;
+    color: #395500;
+    text-decoration: none;
+}
+
+.wrapper .perConfigCon .butt {
+    color: #645A44;
+    padding: 5px 8px;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid #ABA498;
+    border-top: 1px solid #C8C4BB;
+    border-left: 1px solid #C8C4BB;
+    background: #F4FBE1;
+    float: left;
+    display: inline;
+    margin: 5px 8px 5px 5px;
+}
+
+.wrapper .perConfigCon .butt:hover {
+    color: #395500;
+    background: #F4FADF;
+    border: 1px solid #80AA00;
+    border-top: 1px solid #9C0;
+    border-left: 1px solid #9C0;
+    text-decoration: none;
+}
+
+.wrapper .options .butt {
+    color: #645A44;
+    padding: 5px 8px;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid #ABA498;
+    border-top: 1px solid #C8C4BB;
+    border-left: 1px solid #C8C4BB;
+    background: #F4FBE1;
+    float: left;
+    display: inline;
+    margin: 10px 8px 5px 5px;
+}
+
+.wrapper .options .butt:hover {
+    color: #395500;
+    background: #F4FADF;
+    text-decoration: none;
+    border: 1px solid #80AA00;
+    border-top: 1px solid #9C0;
+    border-left: 1px solid #9C0;
+}
+
+.note {
+    margin: 51px 80px;
+    padding: 50px 0;
+    color: black;
+    border: 1px solid #eee;
+    background: #fff;
+    ;
+}
+
+.loading {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.effect {
+    position: absolute;
+    z-index: 20000;
+    border: 1px #000 solid;
+    float: left;
+}
+
+.wrapper .moreConMain {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    z-index: 100;
+}
+
+.wrapper .moreBg1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    z-index: 102;
+    border: 1px #fff solid;
+}
+
+.wrapper .moreConMainUp {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 103;
+    border: 1px #000 solid;
+}
+
+.wrapper .moreConMainUp .moreTable {
+    background-color: #bdbdbd;
+}
+
+.wrapper .moreConMainUp .moreTable .p1 {
+    line-height: 27px;
+    text-indent: 15px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ca6f04;
+    height: 27px;
+    background: url(../images/moreBgTitle.gif) repeat-x;
+}
+
+.wrapper .moreConMainUp .moreTable .p2 {
+    line-height: 50px;
+    text-indent: 15px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ca6f04;
+    height: 50px;
+    background: #e8e8e8;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.wrapper .moreConMainUp .moreTable td {
+    text-indent: 25px;
+    line-height: 25px;
+    height: 25px;
+}
+
+.wrapper .moreConMainUp .moreTable td a {
+    padding-left: 8px;
+    font-size: 13px;
+    color: #000;
+}
+
+.wrapper .moreConMainUp .moreTable td a:visited {
+    color: #800080;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

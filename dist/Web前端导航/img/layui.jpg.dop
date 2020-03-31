@@ -1,0 +1,32 @@
+Sidecar = {
+	Date = "2020-02-27T02:03:52Z",
+	Software = "DxO PhotoLab 3.1.3 48",
+	Source = {
+		Items = {
+			{
+			Albums = "",
+			CreationDate = "2020-02-27T02:03:37Z",
+			ModificationDate = "2020-02-27T02:03:37Z",
+			Name = "layui.jpg",
+			OutputItems = {
+			},
+			ProcessingStatus = 1,
+			Rank = 0,
+			Rotation = 0,
+			Settings = {
+				AppliedPresetDisplayName = "",
+				AppliedPresetUniqueName = "",
+				Base = {
+				},
+				Overrides = {
+				},
+				Version = "14.0",
+			},
+			ShouldProcess = 2,
+			Uuid = "38B962CC-2AE2-48BF-B8F7-2DCC503FA221",
+			},
+		},
+		Uuid = "073A2E04-39F2-40C2-A4C4-AF0229D086C4",
+	},
+	Version = "14.0",
+}
